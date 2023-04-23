@@ -52,19 +52,39 @@
 //НАПИШІТЬ ПРОГРАМУ , ДЕ МИ У КОРИСТОВАЧА ПИТАЄМОСЬ МІСЯЦЬ НАРОДЖЕННЯ,
 // І ПОКАЗУЄМО У ЯКУ ПОРУ РОКУ ВІН НАРОДИВСЯ
 
-const monthBirth = Number(prompt("В якому місяці ви народилися?"));
+// const monthBirth = Number(prompt("В якому місяці ви народилися?"));
 
-if (monthBirth === 12 || monthBirth === 1 ||monthBirth === 2) {
-    console.log ("Зима");
+// if (monthBirth === 12 || monthBirth === 1 ||monthBirth === 2) {
+//     console.log ("Зима");
 
-}else if (monthBirth >= 3 && monthBirth < 6) {
-    console.log ("Весна");
-} else if (monthBirth >= 6 && monthBirth < 9) {
-    console.log("Літо");
-} else if (monthBirth >= 9 && monthBirth < 12) {
-    console.log("Осінь");
+// }else if (monthBirth >= 3 && monthBirth < 6) {
+//     console.log ("Весна");
+// } else if (monthBirth >= 6 && monthBirth < 9) {
+//     console.log("Літо");
+// } else if (monthBirth >= 9 && monthBirth < 12) {
+//     console.log("Осінь");
 
-} else {
-    console.log ("Такого місяця не існує")
-} 
+// } else {
+//     console.log ("Такого місяця не існує")
+// } 
  
+
+// ЗАДАЧА 7
+// НАПИШІТЬ ПРОГРАМУ, ЯКА ПРОВІРЯЄ ЛОГІН І ПАРОЛЬ,
+//  І ВИВОДИТЬ ПРИВІТАННЯ - ЯКЩО ВСЕ ДОБРЕ, АБО ВИДАЄ ПОМИЛКУ ,
+//  ЩО НЕ ВІРНИЙ ЛОГІН
+
+
+// const login = prompt(`введи логін`);
+// const password = prompt('введи пароль');
+// const loginAdmin = "room";
+// const passwordAdmin = "four";
+// // if (loginAdmin === login && passwordAdmin === password){
+// // 	console.log("вірний");
+
+// // } else {
+// // 	console.log("Невірно");
+// // }
+
+// const loginAd = loginAdmin === login && passwordAdmin === password ? "вірний" : "Невірно";
+// console.log(loginAd);
