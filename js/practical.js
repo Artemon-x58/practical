@@ -89,14 +89,15 @@
 // const loginAd = loginAdmin === login && passwordAdmin === password ? "вірний" : "Невірно";
 // console.log(loginAd);
 
+//Задача 8
 // НАПИШІТЬ ПРОГРАМУ , ЯКА БУДЕ ЗАПИТУВАТИ У КОРИСТУВАЧА ПЕРІОД ПІДПИСКИ НА СЕРВІС ТА ПОКАЗУВАТИМЕ ЦІНУ ПІДПИСКИ(ВИКОРИСТАЙ IF..ELSE, ТА ПЕРЕПИШИ НА SWITCH)
 // ЯКЩО ДЕНЬ - ціна 1.99
 // ЯУЩО НЕДІЛЯ - ціна 5.99
 // ЯКЩО МІСЯЦЬ - ціна 10.99
 // ЯКЩО РІК - ціна 100.99
 
-const period = prompt('ПЕРІОД ПІДПИСКИ НА СЕРВІС');
-const UpPeriod = period.toUpperCase();
+//const period = prompt('ПЕРІОД ПІДПИСКИ НА СЕРВІС');
+//const UpPeriod = period.toUpperCase();
 // if (UpPeriod === 'ДЕНЬ') {
 //     console.log('ціна 1.99')
 // } else if (UpPeriod === 'НЕДІЛЯ') {
@@ -109,7 +110,7 @@ const UpPeriod = period.toUpperCase();
 //     console.log('такого периода нема')
 // }
 
-switch (UpPeriod) {
+/*switch (UpPeriod) {
     case 'ДЕНЬ':
         console.log('ціна 1.99')
         break;
@@ -128,4 +129,29 @@ case 'РІК':
     default:
         console.log('такого периода нема')
          break;        
-}
+}*/
+
+
+
+
+// DC
+
+//ЗАДАЧА 9
+//НАПИШІТЬ ЦИКЛ FOR ЯКА БУДЕ ВИВОДИТИ У КОНСОЛЬ ЧИСЛА ЗА ЗРОСТАННЯМ 
+//ВІД MIN ДО MAX, ПІСЛЯ ТОГО ЧИСЛА КРАТНІ 10
+const min = 5;
+const max = 500;
+
+for (let i = min; i <= max; i += 1) {
+    console.log(i);
+    if (i % 10 === 0){
+        console.log('Число кратне 10:', i);
+    }
+  }
+
+console.log(`Katty, I LOVE YOU`);
+
+
+//ЗАДАЧА 10
+//НАПИШІТЬ ПРОГРАМУ, ЯКА БУДЕ ВИЗНАЧАТИ ДОВЖИНУ ІМЕНІ , ЯКЩО ІМЯ БІЛЬШЕ 7 СИМВОЛІВ, КОНСОЛЬ ВИВОДИТЬ "Wow, you  have a REALLY long name!" , ЯКЩО МЕНШЕ 7
+//"Your name isn't very long"
