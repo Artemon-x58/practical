@@ -48,3 +48,23 @@
 //     console.log('НеПарне');
 // }
 
+//ЗАДАЧА 6
+//НАПИШІТЬ ПРОГРАМУ , ДЕ МИ У КОРИСТОВАЧА ПИТАЄМОСЬ МІСЯЦЬ НАРОДЖЕННЯ,
+// І ПОКАЗУЄМО У ЯКУ ПОРУ РОКУ ВІН НАРОДИВСЯ
+
+const monthBirth = Number(prompt("В якому місяці ви народилися?"));
+
+if (monthBirth === 12 || monthBirth === 1 ||monthBirth === 2) {
+    console.log ("Зима");
+
+}else if (monthBirth >= 3 && monthBirth < 6) {
+    console.log ("Весна");
+} else if (monthBirth >= 6 && monthBirth < 9) {
+    console.log("Літо");
+} else if (monthBirth >= 9 && monthBirth < 12) {
+    console.log("Осінь");
+
+} else {
+    console.log ("Такого місяця не існує")
+} 
+ 
