@@ -139,7 +139,7 @@ case 'РІК':
 //ЗАДАЧА 9
 //НАПИШІТЬ ЦИКЛ FOR ЯКА БУДЕ ВИВОДИТИ У КОНСОЛЬ ЧИСЛА ЗА ЗРОСТАННЯМ 
 //ВІД MIN ДО MAX, ПІСЛЯ ТОГО ЧИСЛА КРАТНІ 10
-const min = 5;
+/*const min = 5;
 const max = 500;
 
 for (let i = min; i <= max; i += 1) {
@@ -148,8 +148,8 @@ for (let i = min; i <= max; i += 1) {
         console.log('Число кратне 10:', i);
     }
   }
+*/
 
-console.log(`Katty, I LOVE YOU`);
 
 
 //ЗАДАЧА 10
