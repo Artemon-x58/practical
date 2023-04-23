@@ -4,6 +4,7 @@
 // const age = 35;
 // const language = 'JAVASCRIPT';
 // const hello = `ДОБРОГО ДНЯ, МЕНЕ ЗВАТИ ${name}, МЕНІ ${age} РОКІВ, Я ВИВЧАЮ ${language}`;
+
 // console.log(hello);
 
 // ЗАДАЧА 2
@@ -19,9 +20,10 @@
 // ЗАДАЧА 3
 // ПОРАХУЙТЕ СУМУ ТОВАРІВ У КОРЗИНІ . ПОТРІБНО ВВЕСТИ СУМУ 3-Х ТОВАРІВ І ПОРАХУВАТИ ЇХ СУМУ
 
-const firstWare = Number(prompt(`Первый товар`));
-const secondWare = +prompt(`Второй товар`);
-const thirdWare = Number(prompt(`Третий товар`));
+// const firstWare = Number(prompt(`Первый товар`));
+// const secondWare = +prompt(`Второй товар`);
+// const thirdWare = Number(prompt(`Третий товар`));
 
-console.log(firstWare + secondWare + thirdWare)
+// console.log(firstWare + secondWare + thirdWare)
+
 
