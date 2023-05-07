@@ -33,7 +33,7 @@
 // const month = Number(prompt('СКІЛЬКИ МІСЯЦІВ МАЄ РІК?'));
 // if (month === 12){
 //     console.log('ВІРНО');
-   
+
 
 // }  else {
 //     console.log('НЕ ЗНАЄТЕ? 12');
@@ -67,6 +67,7 @@
 // } else {
 //     console.log ("Такого місяця не існує")
 // }
+<<<<<<< Updated upstream
  
 // Задача 6_'через введення повної назви місяця'
 
@@ -117,6 +118,8 @@ switch (monthBirth) {
 }
 console.log(season);
 */
+=======
+>>>>>>> Stashed changes
 
 
 // ЗАДАЧА 7
@@ -156,23 +159,31 @@ console.log(season);
 //     console.log('ціна 10.99')
 // } else if (UpPeriod === 'РІК') {
 //     console.log('ціна 100.99')
-// } else { 
+// } else {
 //     console.log('такого периода нема')
 // }
 
+<<<<<<< Updated upstream
 /*switch (UpPeriod) {
     case 'ДЕНЬ':
         console.log('ціна 1.99')
         break;
+=======
+// switch (UpPeriod) {
+//     case 'ДЕНЬ':
+//         console.log('ціна 1.99')
+//         break;
+>>>>>>> Stashed changes
 
-case 'НЕДІЛЯ':
-    console.log('ціна 5.99')
-    break;
+// case 'НЕДІЛЯ':
+//     console.log('ціна 5.99')
+//     break;
 
-case 'МІСЯЦЬ':
-    console.log('ціна 10.99')
-    break;
+// case 'МІСЯЦЬ':
+//     console.log('ціна 10.99')
+//     break;
 
+<<<<<<< Updated upstream
 case 'РІК':
     console.log('ціна 100.99')
         break;
@@ -686,3 +697,12 @@ for (let product of products) {
 
 getProductPrice('Rubin');
 */
+=======
+// case 'РІК':
+//     console.log('ціна 100.99')
+//         break;
+//     default:
+//         console.log('такого периода нема')
+//          break;
+// }
+>>>>>>> Stashed changes
