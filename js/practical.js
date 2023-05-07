@@ -697,12 +697,3 @@ for (let product of products) {
 
 getProductPrice('Rubin');
 */
-=======
-// case 'РІК':
-//     console.log('ціна 100.99')
-//         break;
-//     default:
-//         console.log('такого периода нема')
-//          break;
-// }
->>>>>>> Stashed changes
