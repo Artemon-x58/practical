@@ -680,7 +680,7 @@ for (let product of products) {
   
 }
 
-  return `${productName}: product do not exist`;
+  return null;
   // Change code above this line
 }
 
