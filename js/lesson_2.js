@@ -129,6 +129,7 @@
 // ЗАДАЧА 8
 // Напишіть ф - цію capitalize, яка буде приймати рядок і буде повертати новий рядок, де кожне слово буде з великої букви
 
+/*
 console.log(capitalize('the quick brown fox'))// 'The Quick Brown Fox '
 
 function capitalize(i) { 
@@ -142,4 +143,47 @@ function capitalize(i) {
 
     }
     return str.join(' ');
+}
+*/
+
+//ЗАДАЧА 9
+//Напишіть функцію для роботи з колекцією навчаючих курсів courses:
+
+/*
+addCourse(name) - добавляє курс у кінець колекції
+removeCourse(name) - видаляє курс із колекції
+updateCourse(oldName, newName)- змінює імя на нове
+*/
+const courses = ["HTML", "CSS", "JavaScript", "React", "PostgreSQL"];
+
+//addCourse("Express"); // ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL', 'Express']
+//addCourse("CSS"); // 'У вас уже є такий курс'
+//removeCourse("React"); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'Express']
+//removeCourse("Vue"); // 'Курс з таким іменем не найдено'
+updateCourse("CSS", "NestJS"); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'NestJS']
+console.log(courses);
+
+/*function addCourse(course) {
+    if (courses.includes(course)) {
+        console.log('У вас уже є такий курс')
+        return;
+    }
+    return courses.push(course);
+}
+ */
+/*
+function removeCourse(course) {
+    let index = courses.indexOf(course);
+    if (index === -1) {
+        console.log('Курс з таким іменем не найдено');
+        return;
+    }
+    courses.splice(index, 1);
+}
+*/
+
+function updateCourse(oldNameCourse, newNameCourse) {
+    let oldCourse = courses.indexOf(oldNameCourse);
+    courses.splice(oldCourse, 1, newNameCourse);
+
 }
