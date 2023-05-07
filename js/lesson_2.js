@@ -154,14 +154,14 @@ addCourse(name) - добавляє курс у кінець колекції
 removeCourse(name) - видаляє курс із колекції
 updateCourse(oldName, newName)- змінює імя на нове
 */
-const courses = ["HTML", "CSS", "JavaScript", "React", "PostgreSQL"];
+//const courses = ["HTML", "CSS", "JavaScript", "React", "PostgreSQL"];
 
 //addCourse("Express"); // ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL', 'Express']
 //addCourse("CSS"); // 'У вас уже є такий курс'
 //removeCourse("React"); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'Express']
 //removeCourse("Vue"); // 'Курс з таким іменем не найдено'
-updateCourse("CSS", "NestJS"); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'NestJS']
-console.log(courses);
+//updateCourse("CSS", "NestJS"); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'NestJS']
+//console.log(courses);
 
 /*function addCourse(course) {
     if (courses.includes(course)) {
@@ -182,8 +182,10 @@ function removeCourse(course) {
 }
 */
 
-function updateCourse(oldNameCourse, newNameCourse) {
+/*function updateCourse(oldNameCourse, newNameCourse) {
     let oldCourse = courses.indexOf(oldNameCourse);
     courses.splice(oldCourse, 1, newNameCourse);
 
 }
+*/
+
