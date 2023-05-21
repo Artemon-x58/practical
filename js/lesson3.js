@@ -28,3 +28,164 @@
 //     console.log(products)
 // }
 // makeProduct("Холодильник", 10000, showProduct);
+
+
+/*ЗАДАЧА 3
+
+МАЄМО МАСИВ, ПОТРІБНО:
+1)получити масив вчених які народились у 19ст;
+2)порахувати загальну суму років скільки прожили вчені , 
+і визначити середнє значення;
+3) відсортувати по алфавіту;
+4)відсортувати по кількості прожитих років;
+5)відфільтрувати, хто народився в 15,16,17ст;
+6)знайти рік народження Albert Einstein;
+7)визначити, чи усі вчені працювали у 19ст;
+*/
+
+const scientists = [
+    {
+      name: "Albert",
+      surname: "Einstein",
+      born: 1879,
+      dead: 1955,
+      id: 1,
+    },
+    {
+      name: "Isaac",
+      surname: "Newton",
+      born: 1643,
+      dead: 1727,
+      id: 2,
+    },
+    {
+      name: "Galileo",
+      surname: "Galilei",
+      born: 1564,
+      dead: 1642,
+      id: 3,
+    },
+    {
+      name: "Marie",
+      surname: "Curie",
+      born: 1867,
+      dead: 1934,
+      id: 4,
+    },
+    {
+      name: "Johannes",
+      surname: "Kepler",
+      born: 1571,
+      dead: 1630,
+      id: 5,
+    },
+    {
+      name: "Nicolaus",
+      surname: "Copernicus",
+      born: 1473,
+      dead: 1543,
+      id: 6,
+    },
+    {
+      name: "Max",
+      surname: "Planck",
+      born: 1858,
+      dead: 1947,
+      id: 7,
+    },
+    {
+      name: "Katherine",
+      surname: "Blodgett",
+      born: 1898,
+      dead: 1979,
+      id: 8,
+    },
+    {
+      name: "Ada",
+      surname: "Lovelace",
+      born: 1815,
+      dead: 1852,
+      id: 9,
+    },
+  
+    {
+      name: "Lise",
+      surname: "Meitner",
+      born: 1878,
+      dead: 1968,
+      id: 11,
+    },
+    {
+      name: "Sarah E.",
+      surname: "Goode",
+      born: 1855,
+      dead: 1905,
+      id: 10,
+    },
+    {
+      name: "Hanna",
+      surname: "Hammarström",
+      born: 1829,
+      dead: 1909,
+      id: 12,
+    },
+  ];
+
+  // 1)получити масив вчених які народились у 19ст;
+/*
+  const allScients = scientists.filter(scientist => 
+    scientist.born  < 1900 && scientist.born >= 1800).map(scientist => 
+        `${scientist.name} ${scientist.surname}`);
+        console.log(allScients);
+        */
+
+// 2)порахувати загальну суму років скільки прожили вчені , 
+//і визначити середнє значення;
+/*
+    const totalYears = scientists.reduce((acc, scientist) => 
+acc + (scientist.dead - scientist.born), 0);
+    console.log(totalYears / scientists.length);
+*/
+
+//    3) відсортувати по алфавіту;
+/*
+const sortAlph = [...scientists].sort((a, b) => a.name[0] > b.name[0]? 1  : -1);
+console.log(sortAlph);
+*/
+
+//4)відсортувати по кількості прожитих років;
+
+/*
+ const totalYearsLived = [...scientists].sort((a, b) => 
+ (a.dead -a.born) - (b.dead - b.born));
+ console.log(totalYearsLived);
+*/
+ 
+// 5)відфільтрувати, хто народився в 15,16,17ст;
+/*
+const oldSchoolScientists = scientists.filter(scientist => 
+    scientist.born < 1700 && scientist.born > 1400);
+    console.log(oldSchoolScientists);
+ */  
+    
+//6)знайти рік народження Albert Einstein;
+
+/*const bornAlbert = scientists.find (scientist => 
+    scientist.name === "Albert" && scientist.surname === "Einstein");
+console.log(bornAlbert.born);
+*/
+/*
+const bornAlbert = scientists.find (({name, surname}) => 
+    name === "Albert" && surname === "Einstein");
+console.log(bornAlbert.born);
+*/
+
+// 7)визначити, чи усі вчені працювали у 19ст;
+
+/*
+const activeLive = scientists.every(scientist => 
+    scientist.dead > 1800 && scientist.dead < 1900);
+    console.log(activeLive);
+*/
+
+
