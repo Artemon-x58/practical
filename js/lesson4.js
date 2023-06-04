@@ -15,7 +15,7 @@ const carCardEl = ({ name, img, price, description }) => {
     imgEl.alt = name;
     imgEl.width = 400;
     const priceEl = document.createElement('p');
-    priceEl.textContent = `price: ${price} uan`;
+    priceEl.textContent = `price: ${price} uah`;
     priceEl.classList.add('car');
     const descEl = document.createElement('p');
     descEl.textContent = description;
