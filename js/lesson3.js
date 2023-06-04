@@ -315,7 +315,7 @@ class User {
     return `User ${this.username} is ${this.age} years old and has ${this.numberOfPosts} posts.`
   }
 
-getInfo2 = () => { 
+  getInfo2 = () => { 
     return `User ${this.username} is ${this.age} years old and has ${this.numberOfPosts} posts.`
   }
 
@@ -323,14 +323,3 @@ getInfo2 = () => {
 const newUser = new User({ username: 'Pavel', age: 25, numberOfPosts: 25 });
 console.log(newUser);
 */
-
-const langs = ['cphyton', 'bjavascript', 'ac++', 'haskel', 'php', 'ruby'];
-const arr = [];
-for (let i = 0; i < langs.length; i+=0) {
-  if (langs[0] > langs[i]){
-    const result = langs.splice(i, 1)[0];
-    langs.unshift(result)
-  }
-} 
-console.log(result);
-
