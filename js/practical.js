@@ -66,61 +66,7 @@
 
 // } else {
 //     console.log ("Такого місяця не існує")
-// }
-<<<<<<< Updated upstream
- 
-// Задача 6_'через введення повної назви місяця'
-
-/*const monthBirth = prompt("В якому місяці ви народилися?").toLowerCase();
-console.log(monthBirth);
-let season;
-
-switch (monthBirth) {
-    case 'december':
-        season = 'Winter';
-        break;
-    case 'january':
-        season = 'Winter';
-        break;
-    case 'february':
-        season = 'Winter';
-        break;
-    case 'march':
-        season = 'Spring';
-        break;
-    case 'april':
-        season = 'Spring';
-        break;
-    case 'may':
-        season = 'Spring';
-        break;
-    case 'june':
-        season = 'Summer';
-        break;
-    case 'july':
-        season = 'Summer';
-        break;
-    case 'august':
-        season = 'Summer';
-        break;
-    case 'september':
-        season = 'Autumn';
-        break;
-    case 'october':
-        season = 'Autumn';
-        break;
-    case 'november':
-        season = 'Autumn';
-        break;
-    default:
-        console.log('Такого місяця не існує');
-        break;
-}
-console.log(season);
-*/
-=======
->>>>>>> Stashed changes
-
+// 
 
 // ЗАДАЧА 7
 // НАПИШІТЬ ПРОГРАМУ, ЯКА ПРОВІРЯЄ ЛОГІН І ПАРОЛЬ,
@@ -163,17 +109,6 @@ console.log(season);
 //     console.log('такого периода нема')
 // }
 
-<<<<<<< Updated upstream
-/*switch (UpPeriod) {
-    case 'ДЕНЬ':
-        console.log('ціна 1.99')
-        break;
-=======
-// switch (UpPeriod) {
-//     case 'ДЕНЬ':
-//         console.log('ціна 1.99')
-//         break;
->>>>>>> Stashed changes
 
 // case 'НЕДІЛЯ':
 //     console.log('ціна 5.99')
@@ -183,14 +118,7 @@ console.log(season);
 //     console.log('ціна 10.99')
 //     break;
 
-<<<<<<< Updated upstream
-case 'РІК':
-    console.log('ціна 100.99')
-        break;
-    default:
-        console.log('такого периода нема')
-         break;        
-}*/
+
 
 
 
