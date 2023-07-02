@@ -40,6 +40,7 @@
 // //
 // fetch(`https://api.github.com/search/users?q=${}&client_id=67684cabc84f94f0938e&client_secret=782ea639550c1b5d986bdd8129813652ed04c92c`)
 
+/*
 const refs = {
     root: document.querySelector("#root"),
     form: document.querySelector("#form"),
@@ -70,3 +71,60 @@ function renderColection (elements) {
 };
 
 refs.btnEl.addEventListener("click", getInput)
+*/
+
+/*
+ЗАДАЧА 2
+ВИКОРИСТОВУЮЧИ API ДАНОГО ПОСИЛАННЯ  https://www.thecocktaildb.com/api.php , ТА ЗА ДОПОМОГОЮ fetch, ВИВОДЬ РЕЗУЛЬТАТ НА ЕКРАН.
+РЕЗУЛЬТАТ ПОШУКУ МОЖНА ОТРИМАТИ ІЗ ІМПУТА, КОЛИ КЛІЄНТ НАБРАВ ДАНИЙ ТОВАР(ВИКОРИСТАЙ РОЗМІТКУ ЗА ДОПОМОГОЮ ШАБЛОННОГО РЯДКА)
+
+  <div id='root'>
+    <form id='form'>
+        <input type="text" id="input">
+      <button>Пошук</button>
+    </form>
+  </div>
+  */
+
+  //www.thecocktaildb.com/api/json/v1/1/list.php?a=list
+
+
+  const refs = {
+    root: document.querySelector("#root"),
+    form: document.querySelector("#form"),
+    cont: document.querySelector(".wrap"),
+    inputEl: document.querySelector("#input"),
+    btnEl: document.querySelector(".btn")
+};
+
+function formEl(evt){
+    evt.preventDefault();
+
+    const inputEl = refs.inputEl.value;
+
+    fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?f=${inputEl}`)
+    .then(response => response.json())
+    .then(data => renderColection(data.drinks))
+    .catch(err => console.log(err))
+
+}
+
+
+refs.form.addEventListener('submit', formEl);
+
+
+function makeHtml ({strDrink, strDrinkThumb
+ }) {
+    const markup = `<img src="${strDrinkThumb
+}" alt="${strDrink}" width="250"><h2>${strDrink}</h2>`;
+    refs.cont.insertAdjacentHTML("beforeend", markup);
+};
+
+function renderColection (elements) {
+    elements.forEach(element => 
+        makeHtml(element));
+};
+
+
+
+
