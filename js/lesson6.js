@@ -75,8 +75,11 @@ refs.btnEl.addEventListener("click", getInput)
 
 /*
 ЗАДАЧА 2
-ВИКОРИСТОВУЮЧИ API ДАНОГО ПОСИЛАННЯ  https://www.thecocktaildb.com/api.php , ТА ЗА ДОПОМОГОЮ fetch, ВИВОДЬ РЕЗУЛЬТАТ НА ЕКРАН.
-РЕЗУЛЬТАТ ПОШУКУ МОЖНА ОТРИМАТИ ІЗ ІМПУТА, КОЛИ КЛІЄНТ НАБРАВ ДАНИЙ ТОВАР(ВИКОРИСТАЙ РОЗМІТКУ ЗА ДОПОМОГОЮ ШАБЛОННОГО РЯДКА)
+ВИКОРИСТОВУЮЧИ API ДАНОГО ПОСИЛАННЯ  https://www.thecocktaildb.com/api.php , 
+ТА ЗА ДОПОМОГОЮ fetch, ВИВОДЬ РЕЗУЛЬТАТ НА ЕКРАН.
+РЕЗУЛЬТАТ ПОШУКУ МОЖНА ОТРИМАТИ ІЗ ІМПУТА, 
+КОЛИ КЛІЄНТ НАБРАВ ДАНИЙ ТОВАР(ВИКОРИСТАЙ РОЗМІТКУ ЗА ДОПОМОГОЮ ШАБЛОННОГО 
+    РЯДКА)
 
   <div id='root'>
     <form id='form'>
@@ -89,42 +92,43 @@ refs.btnEl.addEventListener("click", getInput)
   //www.thecocktaildb.com/api/json/v1/1/list.php?a=list
 
 
-  const refs = {
-    root: document.querySelector("#root"),
-    form: document.querySelector("#form"),
-    cont: document.querySelector(".wrap"),
-    inputEl: document.querySelector("#input"),
-    btnEl: document.querySelector(".btn")
-};
+//   const refs = {
+//     root: document.querySelector("#root"),
+//     form: document.querySelector("#form"),
+//     cont: document.querySelector(".wrap"),
+//     inputEl: document.querySelector("#input"),
+//     btnEl: document.querySelector(".btn")
+// };
 
-function formEl(evt){
-    evt.preventDefault();
+// function formEl(evt){
+//     evt.preventDefault();
 
-    const inputEl = refs.inputEl.value;
+//     const inputEl = refs.inputEl.value;
 
-    fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?f=${inputEl}`)
-    .then(response => response.json())
-    .then(data => renderColection(data.drinks))
-    .catch(err => console.log(err))
+//     fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?f=${inputEl}`)
+//     .then(response => response.json())
+//     .then(data => renderColection(data.drinks))
+//     .catch(err => console.log(err))
 
-}
-
-
-refs.form.addEventListener('submit', formEl);
+// }
 
 
-function makeHtml ({strDrink, strDrinkThumb
- }) {
-    const markup = `<img src="${strDrinkThumb
-}" alt="${strDrink}" width="250"><h2>${strDrink}</h2>`;
-    refs.cont.insertAdjacentHTML("beforeend", markup);
-};
-
-function renderColection (elements) {
-    elements.forEach(element => 
-        makeHtml(element));
-};
+// refs.form.addEventListener('submit', formEl);
 
 
+// function makeHtml ({strDrink, strDrinkThumb
+//  }) {
+//     const markup = `<img src="${strDrinkThumb
+// }" alt="${strDrink}" width="250"><h2>${strDrink}</h2>`;
+//     refs.cont.insertAdjacentHTML("beforeend", markup);
+// };
+
+// function renderColection (elements) {
+//     elements.forEach(element => 
+//         makeHtml(element));
+// };
+
+
+// --------------------------------------------
 
 

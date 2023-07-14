@@ -7,7 +7,7 @@
 // хедера, в іншому випадку його видаляємо
 
 
-const nav = document.getElementById('navigation');
+/* const nav = document.getElementById('navigation');
 const navHeader = document.querySelector('header');
 
 
@@ -34,7 +34,7 @@ function scrollControl() {
 
 window.addEventListener('scroll', scrollControl)
 
-
+ */
 
 
 
